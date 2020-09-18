@@ -1,0 +1,20 @@
+* {
+  /* font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif; 
+  background: #242B33; */
+  margin: 0;
+  padding: 0;
+}
+
+a { 
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@import 'general';
+@import 'media';
+@import 'mixins';
