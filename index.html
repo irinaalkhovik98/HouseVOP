@@ -50,7 +50,7 @@
 
   <main class="main">
     <section class="testimonials">
-      <div class="container"></div>
+      <div class="container">
         <div class="location">
           <div class="cards">
             <img src="img/location/history_park-icon.svg" alt="history_park-icon">
@@ -69,38 +69,48 @@
             <p>6 км <br> велодорожек</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     </section>
     <section class="loft">
       <div class="container">
-        <h1 class="loft-title">Наши квартиры </h1>
-          <div class="loft-block">
-            <div class="loft-cards">
-              <img src="img/loft/loft-img.png" alt="loft-image">
-              <a href="#">Лофт — 3 этажа</a>
-            </div>
-            <div class="loft-cards">
-              <img src="img/loft/loft-img2.png" alt="loft-image">
-              <a href="#">Лофт — 2 этажа</a>
-            </div>
-            <div class="loft-cards">
-              <img src="img/loft/loft-img.png" alt="loft-image">
-              <a href="#">Лофт — 3 этажа</a>
-            </div>
-            <div class="loft-cards">
-              <img src="img/loft/loft-img2.png" alt="loft-image">
-              <a href="#">Лофт — 2 этажа</a>
-            </div>
+        <h1 class="title">Наши квартиры </h1>
+        <div class="loft-block">
+          <div class="loft-cards slide active">
+            <img src="img/loft/loft-img.png" alt="loft-image">
+            <a href="#">Лофт — 3 этажа</a>
           </div>
+          <div class="loft-cards slide">
+            <img src="img/loft/loft-img2.png" alt="loft-image">
+            <a href="#">Лофт — 2 этажа</a>
+          </div>
+          <div class="loft-cards slide">
+            <img src="img/loft/loft-img.png" alt="loft-image">
+            <a href="#">Лофт — 3 этажа</a>
+          </div>
+          <div class="loft-cards slide">
+            <img src="img/loft/loft-img2.png" alt="loft-image">
+            <a href="#">Лофт — 2 этажа</a>
+          </div>
+          <div id="btn-prev"><img src="img/for-slider/left-arrow.svg" alt=""></div>
+          <div id="btn-next"><img src="img/for-slider/right-arrow.svg" alt=""></div>
         </div>
+        
+        <div class="dots-wrapper">
+          <span class="dots active"></span>
+          <span class="dots"></span>
+          <span class="dots"></span>
+          <span class="dots"></span>
+      </div>
+      </div>
         <!-- /.loft-cards -->
       </section>
       <!-- /.loft -->
       <section class="feedback">
         <div class="container">
+          <h1 class="title">Хотите посмотреть?</h1>
           <div class="feedback-content">
             <div class="feedback-text">
-              <h1>Хотите посмотреть?</h1>
               <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
             </div>
             <div class="feedback-form">
@@ -120,9 +130,51 @@
           <img src="img/video-img/video.png" alt="">
         </div>
       </section>
+      <section class="map">
+        <div class="container">
+          <h1 class="title">Район на карте</h1>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e7dc645ff3fb825208e9f9790b98ba3139840fa6b8aa73faa01c7bb6739296a&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+      </section>
+      <section class="question">
+        <div class="container">
+          <h1 class="title">Есть вопросы?</h1>
+          <form action="#">
+            <p>*Мы никому не передаем ваши данные. <br>
+              И не сохраняем ваш номер в базу.</p>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш телефон">
+            <button type="submit">Посмотреть район</button>
+        </div>
+      </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-menu">
+        <img src="img/header/logo.svg" alt="logo" class="logo">
+        <ul class="menu">
+          <li class="list-item"><a href="#" class="list-link">О комплексе</a></li>
+          <li class="list-item"><a href="#" class="list-link">Район</a></li>
+          <li class="list-item"><a href="#" class="list-link">Каталог</a></li>
+          <li class="list-item"><a href="#" class="list-link">Ипотека</a></li>
+          <li class="list-item"><a href="#" class="list-link">Контакты</a></li>
+        </ul>
+        <div class="social-contact">
+          <p>Адрес: Наб. реки Фонтанки 10-15</p>
+          <p>Телефон: <a href="tel:88121234567">8 (812) 123-45-67</a></p>
+          <p>Отдел продаж: 10:00 - 20:00</p>
+          <p>E-mail: <a href="mailto:vip@housevip.ru" class="email">vip@housevip.ru</a></p>
+          <div class="social-link">
+            <a href="#"><img src="img/footer/youtube-icon.svg" alt="youtube-icon"></a>
+            <a href="#"><img src="img/footer/vk-icon.svg" alt="vk-icon"></a>
+            <a href="#"><img src="img/footer/facebook-icon.svg" alt="facebook-icon"></a>
+            <a href="#"><img src="img/footer/instagram-icon.svg" alt="instagram-icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="js/main.js"></script>
-  
 </body>
 </html>

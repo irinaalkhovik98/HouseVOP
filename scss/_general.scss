@@ -1,13 +1,27 @@
 .container {
-  width: 90%;
-  max-width: 1170px;
+  max-width: 1140px;
   margin: 0 auto;
 }
+
+.title {
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D4C17F;
+  margin-bottom: 100px;
+}
+
 .header {
   background-image: url(../img/header/header_bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
+  background-color: #242B33;
   height: 840px;
+  .title {
+    font-size: 48px;
+    text-align: center;
+  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -38,6 +52,7 @@
     border: 1px solid #fff;
     color: #D4C17F;
     padding: 7px;
+    font-weight: bold;
     transition: all 0.5s ease;
   }
 
@@ -45,15 +60,6 @@
     margin: 0 auto;
     margin-top: 218px;
     width: 582px;
-    .title {
-      font-family: 'Playfair Display';
-      font-weight: bold;
-      font-size: 48px;
-      line-height: 64px;
-      text-align: center;
-      padding-bottom: 97px;
-      color: #D4C17F
-    }
     .scroll {
       display: block;
       height: 46px;
@@ -70,7 +76,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 184px;
+      margin-top: 285px;
       .map-info img {
         padding-right: 10px;
       }
@@ -84,7 +90,7 @@
 .main {
   background: #242B33;
   .testimonials {
-    height: 340px;
+    min-height: 340px;
     padding-top: 120px;
     background-image: url(../img/location/bg_II.svg);
     background-repeat: no-repeat;
@@ -111,20 +117,13 @@
           color: #FFFFFF;
         }
       }
+      
     }
   }
   .loft {
     background-image: url('../img/loft/III_bg.svg');
     background-repeat: no-repeat;
     min-height: 900px;
-    &-title {
-      font-family: 'Playfair Display';
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 48px;
-      color: #D4C17F;
-      padding-bottom: 100px;
-    }
     &-block {
       display: flex;
       justify-content: space-evenly;
@@ -134,8 +133,6 @@
     }
     &-cards {
       width: 535px;
-    }
-    &-cards:first-child {
       margin-bottom: 50px;
     }
 
@@ -151,8 +148,12 @@
       border: 1px solid #fff;
       color: #D4C17F;
       padding: 7px;
+      font-weight: bold;
       transition: all 0.5s ease;
     } 
+    #btn-prev, #btn-next {
+      display: none;
+    }
   }
 
   .feedback {
@@ -162,6 +163,7 @@
     margin-top: 45px;
     padding-bottom: 90px;
     padding-top: 45px;
+    min-height: 450px;
     &-content {
       display: flex;
       justify-content: space-between;
@@ -169,14 +171,6 @@
     }
     &-text {
       width: 525px;
-    }
-    &-text h1{
-      font-family: 'Playfair Display';
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 48px;
-      color: #D4C17F;
-      padding-bottom: 50px;
     }
     &-text p {
       font-family: Raleway;
@@ -195,7 +189,7 @@
       justify-content: space-evenly;
       align-items: center;
     }
-    &-form input{
+    input{
       width: 255px;
       height: 50px;
       background: #FFFFFF;
@@ -211,7 +205,74 @@
     input:hover {
       cursor: pointer;
     }
-    &-form button {
+    button {
+      width: 255px;
+      height: 50px;
+      background: #D4C17F;
+      font-family: 'Raleway';
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 27px;
+      text-align: center;
+      color: #FFFFFF;
+      border: none;
+    }
+    button:hover {
+      background: none;
+      color: #D4C17F;
+      font-weight: bold;
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+    &-form p {
+      font-family: 'Raleway';
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      color: #E7E7E7;
+      width: 255px;
+    }
+  }
+  .video {
+    background-image: url(../img/video-img/IV-bg.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    min-height: 830px;
+    img {
+      margin-left: 90px;
+    }
+  }
+  .map {
+    background-image: url(../img/map-img/V-bg.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+    margin-bottom: 70px;
+    
+  }
+  .question {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    input{
+      width: 255px;
+      height: 50px;
+      background: #FFFFFF;
+      opacity: 0.2;
+      font-family: 'Raleway';
+      font-size: 14px;
+      text-align: center;
+      line-height: 27px;
+      color: #BEBEBE;
+      border: none;
+      margin-bottom: 35px;
+    }
+    input:hover {
+      cursor: pointer;
+    }
+    button {
       width: 255px;
       height: 50px;
       background: #D4C17F;
@@ -229,7 +290,7 @@
       border: 1px solid #fff;
       cursor: pointer;
     }
-    &-form p {
+    p {
       font-family: 'Raleway';
       font-size: 13px;
       line-height: 16px;
@@ -238,13 +299,52 @@
       width: 255px;
     }
   }
-  .video {
-    background-image: url(../img/video-img/IV-bg.svg);
-    background-position: center right;
-    background-repeat: no-repeat;
-    height: 830px;
-    img {
-      margin-left: 90px;
+}
+
+.footer {
+  min-height: 252px;
+  background: #242B33;
+  padding-top: 92px;
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu {
+      display: flex;
+    }
+    .menu li {
+      padding-right: 15px; 
+    }
+    li, p, a {
+      font-family: 'Raleway';
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      padding-bottom: 10px;
+    }
+    .menu a:hover {
+      border: 1px solid #fff;
+      color: #D4C17F;
+      padding: 7px;
+      margin-top: 15px;
+      transition: all 0.5s ease;
+    }
+    .email {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      color: #D4C17F;
+    }
+    .social-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .social-link a:hover {
+      color: #D4C17F;
     }
   }
 }
